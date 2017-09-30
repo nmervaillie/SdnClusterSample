@@ -10,7 +10,7 @@ More detail is available in the [documentation](http://neo4j.com/docs/ogm-manual
 
 There are REST 2 endpoints:
 * `GET /users` : retrieves users using a read only transaction, hitting replica servers if they are available instead of core servers.
-* `POST /users` : creates a user. Retry the operation if the luster in not available.
+* `POST /users` : creates a user. Retry the operation if the cluster in not available. Check the notes in `UserController` for additional info.
 
 To run the example :
 - start a cluster (see the script `start-neo-cluster.sh` : it starts a cluster with docker)
