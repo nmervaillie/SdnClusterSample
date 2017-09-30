@@ -46,6 +46,7 @@ public class SpringBootExampleApplication {
 				.uris(uris)
 				.credentials(username, password)
 				.connectionLivenessCheckTimeout(livenessTimeout)
+				.verifyConnection(true)
 				.build();
 
 		return new SessionFactory(configuration, "org.neo4j.example.cluster.domain");
